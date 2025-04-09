@@ -1,28 +1,56 @@
-# 🌲 Cypress, do Zero à Nuvem ☁️
+# 💻 Projeto: Testes End-to-End com Cypress
 
-👋 Seja bem-vindo(a)!
+Este projeto foi desenvolvido durante o curso **Cypress do Zero à Nuvem**, ministrado por **Walmyr Filho**, com o objetivo de aprender os comandos básicos do framework Cypress.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai amar esse curso. ❤️
 
-## O que você vai aprender?
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar upload de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
-- Como executar os testes em um _workflow_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como integrar seu _workflow_ de integração contínua com o Cypress Cloud (o serviço de gestão de testes do Cypress na nuvem)
+## ✅ Pré-requisitos
 
-## Vamos começar?
+Antes de começar, você precisará ter os seguintes itens instalados na sua máquina:
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+- [Node.js](https://nodejs.org/) - `v20.15.0`
+- [npm](https://www.npmjs.com/) - `v10.7.0`
 
-___
+> Essas foram as versões utilizadas no projeto. É recomendado utilizar as mesmas ou versões LTS mais recentes.
 
-Este é um curso da **Escola Talking About Testing**.
+
+## 📦 Instalação
+
+Para instalar as dependências do projeto, execute o comando:
+
+```bash
+npm install
+```
+
+
+## 🚀 Como executar os testes
+
+Neste projeto, é possível rodar os testes tanto no modo headless (sem interface) quanto no modo interativo (com interface gráfica).
+
+### Modo Headless
+
+Executa os testes diretamente no terminal com viewport de desktop:
+
+```bash
+npm run cy:run
+```
+
+Para rodar os testes simulando um dispositivo mobile:
+
+```bash
+npm run cy:run:mobile
+```
+
+### Modo Interativo (Cypress App)
+
+Abre a interface gráfica do Cypress para execução dos testes:
+
+```bash
+npm run cy:open
+```
+
+Para abrir o Cypress simulando um dispositivo mobile:
+
+```bash
+npm run cy:open:mobile
+```
